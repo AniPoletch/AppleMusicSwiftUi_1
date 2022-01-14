@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct AppleMusicSwiftUi_1App: App {
+struct AppleMusicTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBar()
         }
     }
 }
+
