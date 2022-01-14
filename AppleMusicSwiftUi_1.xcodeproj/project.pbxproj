@@ -15,7 +15,7 @@
 		953D5B532791A81C001C69E6 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B522791A81C001C69E6 /* LibraryView.swift */; };
 		953D5B552791A836001C69E6 /* LibraryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B542791A836001C69E6 /* LibraryInfo.swift */; };
 		953D5B582791A851001C69E6 /* LibraryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B572791A851001C69E6 /* LibraryFilter.swift */; };
-		953D5B5A2791A862001C69E6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B592791A862001C69E6 /* File.swift */; };
+		953D5B5A2791A862001C69E6 /* ModelFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B592791A862001C69E6 /* ModelFilter.swift */; };
 		953D5B5C2791A89A001C69E6 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B5B2791A89A001C69E6 /* RadioView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +29,7 @@
 		953D5B522791A81C001C69E6 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		953D5B542791A836001C69E6 /* LibraryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInfo.swift; sourceTree = "<group>"; };
 		953D5B572791A851001C69E6 /* LibraryFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFilter.swift; sourceTree = "<group>"; };
-		953D5B592791A862001C69E6 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		953D5B592791A862001C69E6 /* ModelFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFilter.swift; sourceTree = "<group>"; };
 		953D5B5B2791A89A001C69E6 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +112,7 @@
 				953D5B522791A81C001C69E6 /* LibraryView.swift */,
 				953D5B542791A836001C69E6 /* LibraryInfo.swift */,
 				953D5B572791A851001C69E6 /* LibraryFilter.swift */,
-				953D5B592791A862001C69E6 /* File.swift */,
+				953D5B592791A862001C69E6 /* ModelFilter.swift */,
 			);
 			path = LibraryView;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			files = (
 				953D5B532791A81C001C69E6 /* LibraryView.swift in Sources */,
 				953D5B582791A851001C69E6 /* LibraryFilter.swift in Sources */,
-				953D5B5A2791A862001C69E6 /* File.swift in Sources */,
+				953D5B5A2791A862001C69E6 /* ModelFilter.swift in Sources */,
 				953D5B552791A836001C69E6 /* LibraryInfo.swift in Sources */,
 				953D5B5C2791A89A001C69E6 /* RadioView.swift in Sources */,
 				953D5B502791A7B9001C69E6 /* PlayerView.swift in Sources */,
