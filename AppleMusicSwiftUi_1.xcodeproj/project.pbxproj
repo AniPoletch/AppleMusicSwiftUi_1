@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		953D5B3F2791A533001C69E6 /* AppleMusicSwiftUi_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B3E2791A533001C69E6 /* AppleMusicSwiftUi_1App.swift */; };
-		953D5B412791A533001C69E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B402791A533001C69E6 /* ContentView.swift */; };
+		953D5B412791A533001C69E6 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B402791A533001C69E6 /* TabBar.swift */; };
 		953D5B432791A534001C69E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D5B422791A534001C69E6 /* Assets.xcassets */; };
 		953D5B462791A534001C69E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D5B452791A534001C69E6 /* Preview Assets.xcassets */; };
+		953D5B502791A7B9001C69E6 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B4F2791A7B9001C69E6 /* PlayerView.swift */; };
+		953D5B532791A81C001C69E6 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B522791A81C001C69E6 /* LibraryView.swift */; };
+		953D5B552791A836001C69E6 /* LibraryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B542791A836001C69E6 /* LibraryInfo.swift */; };
+		953D5B582791A851001C69E6 /* LibraryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B572791A851001C69E6 /* LibraryFilter.swift */; };
+		953D5B5A2791A862001C69E6 /* ModelFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B592791A862001C69E6 /* ModelFilter.swift */; };
+		953D5B5C2791A89A001C69E6 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B5B2791A89A001C69E6 /* RadioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		953D5B3B2791A533001C69E6 /* AppleMusicSwiftUi_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSwiftUi_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953D5B3E2791A533001C69E6 /* AppleMusicSwiftUi_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSwiftUi_1App.swift; sourceTree = "<group>"; };
-		953D5B402791A533001C69E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		953D5B402791A533001C69E6 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		953D5B422791A534001C69E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953D5B452791A534001C69E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		953D5B4F2791A7B9001C69E6 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		953D5B522791A81C001C69E6 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		953D5B542791A836001C69E6 /* LibraryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInfo.swift; sourceTree = "<group>"; };
+		953D5B572791A851001C69E6 /* LibraryFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFilter.swift; sourceTree = "<group>"; };
+		953D5B592791A862001C69E6 /* ModelFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFilter.swift; sourceTree = "<group>"; };
+		953D5B5B2791A89A001C69E6 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		953D5B3D2791A533001C69E6 /* AppleMusicSwiftUi_1 */ = {
 			isa = PBXGroup;
 			children = (
-				953D5B3E2791A533001C69E6 /* AppleMusicSwiftUi_1App.swift */,
-				953D5B402791A533001C69E6 /* ContentView.swift */,
+				953D5B4C2791A727001C69E6 /* App */,
+				953D5B4D2791A754001C69E6 /* TabBar */,
+				953D5B4E2791A774001C69E6 /* PlayerView */,
+				953D5B512791A7CD001C69E6 /* LibraryView */,
+				953D5B562791A839001C69E6 /* RadioView */,
 				953D5B422791A534001C69E6 /* Assets.xcassets */,
 				953D5B442791A534001C69E6 /* Preview Content */,
 			);
@@ -65,6 +80,49 @@
 				953D5B452791A534001C69E6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		953D5B4C2791A727001C69E6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				953D5B3E2791A533001C69E6 /* AppleMusicSwiftUi_1App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		953D5B4D2791A754001C69E6 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				953D5B402791A533001C69E6 /* TabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		953D5B4E2791A774001C69E6 /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				953D5B4F2791A7B9001C69E6 /* PlayerView.swift */,
+			);
+			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		953D5B512791A7CD001C69E6 /* LibraryView */ = {
+			isa = PBXGroup;
+			children = (
+				953D5B522791A81C001C69E6 /* LibraryView.swift */,
+				953D5B542791A836001C69E6 /* LibraryInfo.swift */,
+				953D5B572791A851001C69E6 /* LibraryFilter.swift */,
+				953D5B592791A862001C69E6 /* ModelFilter.swift */,
+			);
+			path = LibraryView;
+			sourceTree = "<group>";
+		};
+		953D5B562791A839001C69E6 /* RadioView */ = {
+			isa = PBXGroup;
+			children = (
+				953D5B5B2791A89A001C69E6 /* RadioView.swift */,
+			);
+			path = RadioView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953D5B412791A533001C69E6 /* ContentView.swift in Sources */,
+				953D5B532791A81C001C69E6 /* LibraryView.swift in Sources */,
+				953D5B582791A851001C69E6 /* LibraryFilter.swift in Sources */,
+				953D5B5A2791A862001C69E6 /* ModelFilter.swift in Sources */,
+				953D5B552791A836001C69E6 /* LibraryInfo.swift in Sources */,
+				953D5B5C2791A89A001C69E6 /* RadioView.swift in Sources */,
+				953D5B502791A7B9001C69E6 /* PlayerView.swift in Sources */,
+				953D5B412791A533001C69E6 /* TabBar.swift in Sources */,
 				953D5B3F2791A533001C69E6 /* AppleMusicSwiftUi_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
