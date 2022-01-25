@@ -4,7 +4,6 @@
 //
 //  Created by anna on 14.01.2022.
 //
-
 import SwiftUI
 
 struct LibraryView: View {
@@ -27,8 +26,7 @@ struct LibraryView: View {
                 isEmptyLibrary ? EditMode.inactive : EditMode.active))
             .accentColor(.red)
             .navigationTitle("Медиатека")
-            .navigationBarItems(trailing:
-                                    Button(action: { isEmptyLibrary.toggle() },
+            .navigationBarItems(trailing:Button(action: { isEmptyLibrary.toggle() },
                                            label: {
                 if isEmptyLibrary {
                     Text("Править")

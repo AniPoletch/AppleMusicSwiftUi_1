@@ -10,13 +10,11 @@ import SwiftUI
 struct PlayerView: View {
     var body: some View {
         ZStack {
-            
             VStack {
-                
-                HStack (spacing: 6) {
+                HStack (spacing: Size.spacing) {
                     Image("MillionDollar")
                         .resizable()
-                        .frame(width: 50, height: 50)
+                        .frame (width: Size.width, height: Size.height)
                     
                     VStack (alignment: .leading, spacing: 4){
                         
@@ -26,9 +24,7 @@ struct PlayerView: View {
                     }
                     Spacer ()
                     
-                    Button(action: {
-                        
-                    }, label: {
+                    Button(action: {}, label: {
                         
                         Image(systemName: "play.fill")
                             .font(.title)
@@ -55,6 +51,13 @@ struct PlayerView: View {
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerView()
+    }
+}
+extension PlayerView{
+    enum Size {
+        static let spacing: CGFloat = 6
+        static let width: CGFloat = 50
+        static let height: CGFloat = 50
     }
 }
 
