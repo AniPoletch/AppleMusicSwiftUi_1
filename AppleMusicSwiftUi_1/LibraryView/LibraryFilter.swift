@@ -3,8 +3,6 @@
 //  AppleMusicSwiftUi_1
 //
 //  Created by anna on 14.01.2022.
-//
-
 import SwiftUI
 
 struct FilterLibraryView: View {
@@ -21,16 +19,14 @@ struct FilterLibraryView: View {
                         .resizable()
                         .scaledToFit()
                         .foregroundColor(.red)
-                        .frame(width: 23,
-                               height: 23)
+                        .frame(width: Size.width,
+                               height: Size.height)
                         .padding([.top, .bottom, .trailing], 9)
                     
                     Text(item.title)
                         .font(.title3)
                 }
             }
-            .onMove(perform: { indices, newOffset in
-            })
         }
         .listStyle(InsetListStyle())
     }
@@ -39,5 +35,11 @@ struct FilterLibraryView: View {
 struct FilterLibraryView_Previews: PreviewProvider {
     static var previews: some View {
         FilterLibraryView()
+    }
+}
+extension FilterLibraryView{
+    enum Size {
+        static let width: CGFloat = 23
+        static let height: CGFloat = 23
     }
 }
