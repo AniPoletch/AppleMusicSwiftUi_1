@@ -17,6 +17,9 @@
 		953D5B582791A851001C69E6 /* LibraryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B572791A851001C69E6 /* LibraryFilter.swift */; };
 		953D5B5A2791A862001C69E6 /* ModelFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B592791A862001C69E6 /* ModelFilter.swift */; };
 		953D5B5C2791A89A001C69E6 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D5B5B2791A89A001C69E6 /* RadioView.swift */; };
+		957FC15727B01C9E0049E381 /* RadioModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FC15627B01C9E0049E381 /* RadioModels.swift */; };
+		957FC15927B01EBF0049E381 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FC15827B01EBF0049E381 /* RadioStation.swift */; };
+		957FC15B27B01F560049E381 /* RadioPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FC15A27B01F560049E381 /* RadioPlaylist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		953D5B572791A851001C69E6 /* LibraryFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFilter.swift; sourceTree = "<group>"; };
 		953D5B592791A862001C69E6 /* ModelFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFilter.swift; sourceTree = "<group>"; };
 		953D5B5B2791A89A001C69E6 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		957FC15627B01C9E0049E381 /* RadioModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModels.swift; sourceTree = "<group>"; };
+		957FC15827B01EBF0049E381 /* RadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		957FC15A27B01F560049E381 /* RadioPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlaylist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				953D5B5B2791A89A001C69E6 /* RadioView.swift */,
+				957FC15A27B01F560049E381 /* RadioPlaylist.swift */,
+				957FC15827B01EBF0049E381 /* RadioStation.swift */,
+				957FC15627B01C9E0049E381 /* RadioModels.swift */,
 			);
 			path = RadioView;
 			sourceTree = "<group>";
@@ -196,12 +205,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				953D5B532791A81C001C69E6 /* LibraryView.swift in Sources */,
+				957FC15B27B01F560049E381 /* RadioPlaylist.swift in Sources */,
 				953D5B582791A851001C69E6 /* LibraryFilter.swift in Sources */,
 				953D5B5A2791A862001C69E6 /* ModelFilter.swift in Sources */,
+				957FC15727B01C9E0049E381 /* RadioModels.swift in Sources */,
 				953D5B552791A836001C69E6 /* LibraryInfo.swift in Sources */,
 				953D5B5C2791A89A001C69E6 /* RadioView.swift in Sources */,
 				953D5B502791A7B9001C69E6 /* PlayerView.swift in Sources */,
 				953D5B412791A533001C69E6 /* TabBar.swift in Sources */,
+				957FC15927B01EBF0049E381 /* RadioStation.swift in Sources */,
 				953D5B3F2791A533001C69E6 /* AppleMusicSwiftUi_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

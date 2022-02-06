@@ -4,8 +4,6 @@
 //
 //  Created by anna on 14.01.2022.
 //
-
-
 import SwiftUI
 
 struct EmptyLibraryView: View {
