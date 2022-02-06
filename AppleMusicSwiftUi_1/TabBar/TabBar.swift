@@ -4,8 +4,6 @@
 //
 //  Created by anna on 14.01.2022.
 //
-
-
 import SwiftUI
 
 struct TabBar: View {
@@ -14,19 +12,17 @@ struct TabBar: View {
     
     var body: some View {
         
-        ZStack (alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
+        ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
             
-            TabView (selection: $current) {
+            TabView(selection: $current) {
                 
                 LibraryView()
-                
                     .tabItem {
                         Image(systemName:"music.note.house.fill")
                         Text("Медиатека")
                     }
                 
                 RadioView ()
-                
                     .tabItem {
                         Image(systemName: "dot.radiowaves.left.and.right")
                         Text("Радио")

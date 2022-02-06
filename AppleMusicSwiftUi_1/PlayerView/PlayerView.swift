@@ -4,19 +4,18 @@
 //
 //  Created by anna on 14.01.2022.
 //
-
 import SwiftUI
 
 struct PlayerView: View {
     var body: some View {
         ZStack {
             VStack {
-                HStack (spacing: Size.spacing) {
-                    Image("MillionDollar")
+                HStack(spacing: Size.spacing) {
+                    Image("Million_Dollar-_Business")
                         .resizable()
                         .frame (width: Size.width, height: Size.height)
                     
-                    VStack (alignment: .leading, spacing: 4){
+                    VStack(alignment: .leading, spacing: Size.spacingPlayer) {
                         
                         Text("Hublot")
                         Text("MORGENSHTERN")
@@ -30,20 +29,17 @@ struct PlayerView: View {
                             .font(.title)
                             .foregroundColor(.gray)
                     })
-                    Button(action: {
-                        
-                    }, label: {
-                        
+                    Button(action: {}, label: {
                         Image(systemName: "forward.fill")
                             .font(.title)
                             .foregroundColor(.gray)
                     })
                 }
             }
-            .padding(.all,6)
-            .background(Color.white.shadow(radius: 7 ))
+            .padding(.all,Size.paddingAll)
+            .background(Color.white.shadow(radius: Size.shadowColor ))
         }
-        .offset(y: -48)
+        .offset(y: Size.offsetY)
         
     }
 }
@@ -58,6 +54,10 @@ extension PlayerView{
         static let spacing: CGFloat = 6
         static let width: CGFloat = 50
         static let height: CGFloat = 50
+        static let spacingPlayer: CGFloat = 4
+        static let shadowColor: CGFloat = 7
+        static let paddingAll: CGFloat = 6
+        static let offsetY: CGFloat = -48
     }
 }
 
