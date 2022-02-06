@@ -7,33 +7,27 @@
 import SwiftUI
 
 struct RadioPlaylist: View {
-    
     @State var items = RadioItems.data
-    
     let rows:[GridItem] =
-    [GridItem(.fixed(320))
+    [GridItem(.fixed(SizePlaylist.sizeImage))
     ]
-    
     var body: some View {
-        ScrollView(showsIndicators: false){
+        ScrollView(.horizontal,showsIndicators: false){
             LazyHGrid(rows: rows){
                 ForEach(items,id: \.id){ RadioItems in
-                    VStack(alignment: .leading) {
-                        
+                    VStack(alignment:.trailing) {
                         Text(RadioItems.name)
                             .foregroundColor(.secondary)
                             .fontWeight(.medium)
-                            .font(.system(size:18))
+                            .font(.system(size:SizePlaylist.sizeText))
                         Text(RadioItems.title)
                             .foregroundColor(.secondary)
                             .fontWeight(.medium)
-                            .font(.system(size:18))
-                        Spacer()
-                            .frame(height: 17)
-                        
+                            .font(.system(size:SizePlaylist.sizeText))
                         Image(RadioItems.image)
-                        
-                        
+                            .resizable()
+                            .frame(width: SizePlaylist.sizeImage)
+                            .cornerRadius (SizePlaylist.cornerRadius)
                     }
                 }
             }
@@ -45,4 +39,10 @@ struct RadioPlaylist_Previews: PreviewProvider {
         RadioPlaylist()
     }
 }
-
+extension RadioPlaylist {
+    enum SizePlaylist {
+        static let sizeImage: CGFloat = 312
+        static let sizeText: CGFloat = 18
+        static let cornerRadius: CGFloat = 10
+    }
+}

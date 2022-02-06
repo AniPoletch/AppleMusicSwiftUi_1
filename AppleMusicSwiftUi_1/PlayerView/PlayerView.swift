@@ -11,7 +11,7 @@ struct PlayerView: View {
         ZStack {
             VStack {
                 HStack(spacing: Size.spacing) {
-                    Image("MillionDollar")
+                    Image("Million_Dollar-_Business")
                         .resizable()
                         .frame (width: Size.width, height: Size.height)
                     

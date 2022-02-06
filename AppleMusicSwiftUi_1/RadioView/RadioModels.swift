@@ -13,15 +13,12 @@ struct RadioItems {
     var title: String
     var image: String
 }
-
-
-extension RadioItems:Identifiable,Hashable {
+extension RadioItems:Identifiable, Hashable {
     static var data = [
-        
         RadioItems(
             name: "Хип-хоп по русски",
             title: "Все хиты руссkого хип-хопа.",
-            image: "hiphoprus"),
+            image: "HIPHOPRUS"),
         RadioItems(
             name: "Чилаут",
             title: "Электронная медитация.",
@@ -29,14 +26,13 @@ extension RadioItems:Identifiable,Hashable {
         RadioItems(
             name: "Хип-хоп",
             title: "Идеальные биты и рифмы.",
-            image: "hiphop"),
+            image: "HIPHOP"),
         RadioItems(
             name: "Хиты на русском",
             title: "Лучшее из русских хитов.",
-            image: "rus")
+            image: "RUS")
     ]
 }
-
 struct ModelRadioStation: Identifiable, Hashable {
     let id = UUID()
     var image: String
@@ -45,7 +41,6 @@ struct ModelRadioStation: Identifiable, Hashable {
 }
 
 extension ModelRadioStation {
-    
     static let data = [
         ModelRadioStation(image: "CANADA", title: "Канадские хиты", subtitle: "Станция Apple Music"),
         ModelRadioStation(image: "MERENGA", title: "Меренге и бачата", subtitle: "Станция Apple Music"),
